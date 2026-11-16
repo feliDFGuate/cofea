@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: #EFE3D5;
+    color: #422E24;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Crema Pergamino (#EFE3D5) with tactile coffee-husk fiber & kraft weave */
+.bg-coffea-fiber {
+  background-color: #EFE3D5;
+  background-image:
+    radial-gradient(rgba(66, 46, 36, 0.055) 0.75px, transparent 0.75px),
+    radial-gradient(rgba(210, 172, 121, 0.14) 0.75px, transparent 0.75px),
+    repeating-linear-gradient(
+      115deg,
+      rgba(66, 46, 36, 0.018) 0px,
+      rgba(66, 46, 36, 0.018) 1px,
+      transparent 1px,
+      transparent 14px
+    ),
+    repeating-linear-gradient(
+      25deg,
+      rgba(210, 172, 121, 0.03) 0px,
+      rgba(210, 172, 121, 0.03) 1px,
+      transparent 1px,
+      transparent 19px
+    );
+  background-size: 22px 22px, 31px 31px, auto, auto;
+  background-position: 0 0, 11px 15px, 0 0, 0 0;
+}
+
+/* Azul Noche Profundo (#122347) woven luxury backdrop with Dorado Trigo (#E5C36B) micro-fiber */
+.bg-coffea-dark-fiber {
+  background-color: #122347;
+  background-image:
+    radial-gradient(rgba(229, 195, 107, 0.11) 0.75px, transparent 0.75px),
+    repeating-linear-gradient(
+      125deg,
+      rgba(250, 245, 238, 0.03) 0px,
+      rgba(250, 245, 238, 0.03) 1px,
+      transparent 1px,
+      transparent 16px
+    ),
+    repeating-linear-gradient(
+      35deg,
+      rgba(229, 195, 107, 0.028) 0px,
+      rgba(229, 195, 107, 0.028) 1px,
+      transparent 1px,
+      transparent 22px
+    );
+  background-size: 26px 26px, auto, auto;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

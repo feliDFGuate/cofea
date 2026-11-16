@@ -1,0 +1,6 @@
+{
+  "name": "COFFEA",
+  "description": "Cafetería de especialidad COFFEA con pedidos en línea, motor de recomendaciones Perfect Pairing, sistema de lealtad WOW y estudio interactivo de bebidas personalizadas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

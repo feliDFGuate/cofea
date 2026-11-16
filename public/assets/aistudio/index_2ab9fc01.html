@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cotización · COFFEA</title>
+<style>
+:root{color-scheme:light;--ink:#333331;--paper:#f8f5ed;--gold:#a08048;--line:#e3d9c7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 system-ui,sans-serif}
+a{color:inherit}
+header{background:#343735;color:#fff8e9}
+.bar,main{max-width:1100px;margin:auto;padding-inline:clamp(18px,5vw,54px)}
+.bar{min-height:78px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.brand{font:26px Georgia,serif;letter-spacing:.16em;text-decoration:none}
+.bar a:last-child{font-size:.84rem}
+main{padding-block:clamp(32px,7vw,72px)}
+.eyebrow{font-size:.73rem;letter-spacing:.13em;text-transform:uppercase;color:#755d31;font-weight:700}
+h1,h2{font-family:Georgia,serif;font-weight:400;line-height:1.15}
+h1{font-size:clamp(34px,6vw,62px);margin:10px 0 15px}
+h2{font-size:clamp(24px,4vw,36px)}
+p{max-width:76ch}
+table{width:100%;border-collapse:collapse;background:#fffdf8;margin-top:28px}
+th,td{padding:16px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead{background:#343735;color:#fff8e9}
+tbody th{width:25%;font-weight:650}
+td:last-child{white-space:nowrap;font-weight:700}
+del{color:#736d63;font-weight:500}
+.free{display:block;color:#37583c}
+figure{margin:24px 0 40px}
+img{display:block;width:100%;height:auto;border-radius:12px}
+figcaption{font-size:.85rem;color:#6d6659;margin-top:10px}
+.package{margin:36px 0 44px;padding:clamp(14px,4vw,32px);background:#eee6d6;border:1px solid var(--line);border-radius:12px}
+.package h2{margin:8px 0 12px}
+.conditions{border-top:1px solid var(--line);padding-top:8px}
+li+li{margin-top:8px}
+.signature{margin-top:32px}
+@media(max-width:560px){table{font-size:.82rem}th,td{padding:10px 6px;overflow-wrap:anywhere}tbody th{width:29%}.bar{min-height:65px}}
+</style>
+</head>
+<body>
+<header><nav class="bar" aria-label="Navegación"><a class="brand" href="/">COFFEA</a><a href="/#menu">Volver a la carta</a></nav></header>
+<main>
+<p class="eyebrow">Media Fusion Online · Propuesta comercial</p>
+<h1>Cotización para COFFEA</h1>
+<p>Cafés Especiales · Modra, Zona 4. Cada servicio tiene su propio precio de implementación.</p>
+<table aria-label="Servicios y precios">
+<thead><tr><th scope="col">Servicio</th><th scope="col">Qué incluye</th><th scope="col">Precio</th></tr></thead>
+<tbody>
+<tr><th scope="row">Página web y carta digital</th><td>Página para celular y escritorio, portada con video, carta con 92 opciones y sus precios, imágenes ilustrativas, paquetes y carrito de demostración.</td><td>Q4,500</td></tr>
+<tr><th scope="row">Sistema de pedidos y cobros en línea</th><td>Recepción de pedidos, panel de gestión para COFFEA, entrega en Modra o retiro en tienda e integración con la pasarela de pago.</td><td>Q8,500</td></tr>
+<tr><th scope="row">Sistema de puntos y recompensas</th><td>Acumulación de puntos por compras, consulta de saldo y canje según las reglas que defina COFFEA. Bonificado al contratar el sistema de pedidos.</td><td><del>Q2,500</del><strong class="free">GRATIS</strong></td></tr>
+<tr><th scope="row">Tarjeta de menú para iPhone</th><td>Diseño y configuración en Apple Wallet, pruebas y botón para guardar la tarjeta desde la carta pública.</td><td>Q1,800</td></tr>
+<tr><th scope="row">Tarjeta de menú para Android</th><td>Diseño y configuración en Google Wallet, pruebas y botón para guardar la tarjeta desde la carta pública.</td><td>Q1,500</td></tr>
+<tr><th scope="row">Paquete para iPhone y Android</th><td>Ambas tarjetas y un QR para mesas y caja que abre la carta pública. Este precio aplica al contratar las dos versiones juntas.</td><td>Q2,800</td></tr>
+</tbody>
+</table>
+<section class="package" aria-labelledby="package-title">
+<p class="eyebrow">Tres formas de pago</p>
+<h2 id="package-title">Paquete completo de COFFEA</h2>
+<p>Incluye la página y carta digital, el sistema de pedidos y cobros en línea, el sistema de puntos y recompensas bonificado, y las tarjetas para Apple Wallet y Google Wallet con QR para mesas y caja.</p>
+<p>El paquete completo incluye caja, comandas de cocina, inventario por receta, mermas, reportes, configuración inicial y capacitación. Equipos, comisiones de pago y mantenimiento se cotizan aparte.</p><table aria-label="Formas de pago del paquete completo">
+<thead><tr><th scope="col">Modalidad</th><th scope="col">Pagos</th></tr></thead>
+<tbody>
+<tr><th scope="row">De contado</th><td>Un pago de Q24,000</td></tr>
+<tr><th scope="row">Quincenal</th><td>12 pagos de Q2,250</td></tr>
+<tr><th scope="row">Mensual</th><td>12 pagos de Q2,500</td></tr>
+</tbody>
+</table>
+</section>
+<section aria-labelledby="wallet-title">
+<h2 id="wallet-title">COFFEA en Apple Wallet y Google Wallet</h2>
+<figure><img src="/assets/coffea-wallet.png" alt="Tarjeta conceptual del menú COFFEA en Apple Wallet y Google Wallet, con un enlace para ver la carta completa" width="1536" height="1024" loading="lazy"><figcaption>Vista conceptual de las tarjetas de menú. El diseño final se adapta al formato de cada billetera.</figcaption></figure>
+</section>
+<section class="conditions" aria-labelledby="terms-title">
+<h2 id="terms-title">Condiciones comerciales</h2>
+<ul>
+<li>Los servicios individuales se cotizan como pagos únicos en quetzales. El paquete completo ofrece las tres modalidades indicadas arriba.</li>
+<li>La membresía de Apple Developer cuesta US$99 al año si hace falta contratarla. La publicación en Google Wallet está sujeta a la aprobación de Google.</li>
+<li>El alojamiento, el dominio y las comisiones de la pasarela se pagan por separado. Los cobros requieren una cuenta comercial de COFFEA en la pasarela elegida.</li>
+</ul>
+<p class="signature"><strong>Luis Felipe Díaz Figueroa</strong><br>Media Fusion Online</p>
+</section>
+</main>
+</body>
+</html>
